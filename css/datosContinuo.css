@@ -1,0 +1,81 @@
+#datos {
+  margin-top: 50px;
+  margin-right: auto;
+  position: relative;
+}
+
+#datos .contenedor {
+  margin-left: 28%;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  width: 55%;
+}
+
+#datos h3 {
+  justify-content: center;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#datos form {
+  justify-content: center;
+  color: #333;
+  font-size: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+#datos .contenedor p {
+  margin-left: 9%;
+  font-size: 15px;
+  padding: 5px;
+  color: #aaa;
+  border: 4px solid #038E88;
+  border-radius: 10px;
+  width: 80%;
+  text-align: center;
+}
+
+input {
+  width: 200px;
+  height: 30px;
+  text-align: center;
+}
+
+input:focus {
+  border: 2px solid #1668C4;
+}
+
+.contenedor button {
+  text-align: center;
+  padding: 5px;
+  margin-left: 41%;
+}
+
+#boton {
+  padding-bottom: 15px;
+}
+
+#datos .contenedor #Aviso {
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+  margin-top: -10px;
+  padding: 10px;
+  background-color: #208E59;
+  border-radius: 10px;
+  color: #fff;
+}
+
+#etiquetaProd {
+  text-align: center;
+  justify-content: center;
+  padding-left: 3.8%;
+}
+
+#datos .contenedor #gradienteProd {
+  margin-left: 24%;
+  text-align: center;
+}

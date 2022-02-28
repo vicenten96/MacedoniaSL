@@ -1,0 +1,36 @@
+#autores {
+  position: relative;
+}
+
+#autores .contenedor {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-left: 100px
+}
+
+#autores article {
+  justify-content: center;
+  margin: 50px;
+}
+
+#vicente {
+  width: 300px;
+  height: 270px;
+}
+
+#jose {
+  width: 300px;
+  height: 270px;
+}
+
+#autores h4 {
+  padding: 10px;
+  font-weight: bold;
+}
+
+#alicia {
+  width: 280px;
+  height: 270px
+}

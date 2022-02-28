@@ -1,0 +1,104 @@
+@import url(menu.css);
+@import url(banner.css);
+@import url(info.css);
+@import url(autores.css);
+@import url(datosContinuo.css);
+@import url(botonesInfo.css);
+@import url(resultadosContinuo.css);
+@import url(inicioPrograma.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  font-family: 'WebFont', quicksanditalic, sans-serif;
+  background: #E3E3E3;
+}
+
+header {
+  width: 100vw;
+  height: 75px;
+  background: #208E59;
+  color: #fff;
+  position:fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  max-width: 100%;
+}
+
+.contenedor imagen{
+  height: 20px;
+  width: 20px;
+  float: right;
+}
+
+.contenedor h1 {
+  cursor: pointer;
+}
+
+.contenedor{
+  width: 98%;
+  margin: auto;
+}
+
+.Macedonia {
+  text-align: center;
+  margin: 20px;
+}
+
+header .contenedor {
+  display: table;
+}
+
+section {
+  margin-bottom: 25px;
+}
+
+header .contenedor a{
+  text-decoration: none;
+  color: #fff;
+}
+
+footer {
+  background-color: #333;
+  width: 100vw;
+}
+
+footer #footer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 100px;
+  justify-content: center;
+  padding: 25px;
+}
+
+.copy {
+  font-size: 15px;
+  color: #fff;
+  font-weight: lighter;
+}
+
+#tituloSeleccion {
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+  margin-top: -10px;
+  padding: 10px;
+  background-color: #208E59;
+  border-radius: 10px;
+  color: #fff;
+}
+
+#botones {
+  margin-left: 30%;
+  background-color: grey;
+}
+
+#limitaciones li {
+  text-align: justify;
+}

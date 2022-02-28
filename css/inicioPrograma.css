@@ -1,0 +1,72 @@
+#inicioPrograma {
+  margin-top: 12%;
+  margin-bottom: 10%;
+  width: 100%;
+}
+
+#inicioPrograma div h2 {
+  margin-left: 20%;
+  border-radius: 10px;
+  padding: 7px;
+  text-align: center;
+  background-color: #208E59;
+  color: #fff;
+  width: 60%;
+  border-color:
+}
+
+#udoIMG {
+  width: 6%;
+  height: auto;
+  position: absolute;
+  left: 18%;
+  display: block;
+  top: 22.5%;
+}
+
+#dptoIMG {
+  width: 6%;
+  height: auto;
+  position: absolute;
+  left: 75%;
+  display: block;
+  top: 22.5%;
+}
+
+#contenedorInicio {
+  margin-left: 21.8%;
+  border: 4px solid #93AEA1;
+  border-radius: 7px;
+  width: 56%;
+  padding: 15px;
+}
+
+#contenedorInicio h4 {
+  color: #179559;
+  text-align: left;
+}
+
+#contenedorInicio h5 {
+  text-align: justify;
+  color: #616E68;
+}
+
+#botonInicio {
+  background-color: #208E59;
+}
+
+#centrarBoton {
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  width: 100vw;
+}
+
+footer #footerInicio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 25px;
+}

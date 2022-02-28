@@ -1,0 +1,34 @@
+#menu-bar {
+  display: none;
+}
+
+header label {
+  float: left;
+  font-size: 28px;
+  margin: 22px 0;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  top:75px;
+  left: 0;
+  width: 175px;
+  height: 100vh;
+  background: #A7A5A5;
+}
+
+.menu a {
+  display: block;
+  color: #fff;
+  height: 50px;
+  text-decoration: none;
+  padding: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255);
+  text-align: center;
+}
+
+.menu a:hover {
+  background: rgba(32, 142, 89, 0.6);
+}

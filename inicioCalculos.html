@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>&copy; Macedonia</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/chart.js"></script>
+  </head>
+
+  <body>
+
+    <header>
+
+      <div class="contenedor">
+        <!-- Menu -->
+        <input type="checkbox" id="menu-bar">
+        <label class="icon-menu" for="menu-bar"></label>
+        <nav class="menu">
+            <a href="inicio.html">Inicio</a>
+            <a href="inicioCalculos.html">Cálculos</a>
+            <a href="acercaDe.html">Acerca de</a>
+            <a href="about:blank"> Salir</a>
+        </nav>
+        <!-- Titulo -->
+        <a href="acercaDe.html"><h1 href="acercaDe.html" class="Macedonia">Macedonia</h1></a>
+        </div>
+    </header>
+
+    <main>
+      <!-- Banner -->
+      <section id="banner">
+        <img src="img/pozo.jpg">
+        <div class="contenedor">
+          <h2>MacedoniaSL</h2>
+          <p>Calculos para el diseño del Levantamiento Artificial por Gas Continuo e Intermitente</p>
+          <a href="acercaDe.html">Leer más</a>
+        </div>
+      </section>
+
+      <!-- Calculos -->
+      <section id="datos">
+        <div class="contenedor">
+
+        </br><h3>Seleccionar metodo de levantamiento artificial por Gas</h3></br>
+
+          <!--Variables para determinacion del metodo de levantamiento artificial por gas lift a usar -->
+
+          <form>
+            <div class="container-fluid">
+              <div class="row">
+
+                <div class="col-sm-6">
+                  <ul class="list-group">
+                    <h3 id="tituloSeleccion">Continuo</h1>
+                    <li class="list-group-item">Pozos con alta y mediana energia</li>
+                    <li class="list-group-item">Presiones estáticas mayores a 150lpc/1000 pies</li>
+                    <li class="list-group-item">Indices de productividad mayores a 0,5bpd/lpc</li>
+                    <li class="list-group-item">Tasas de producción mayores de 200bpd</li>
+                  </ul>
+                </div>
+
+                <div class="col-sm-6">
+                  <ul class="list-group">
+                    <h3 id="tituloSeleccion">Intermitente</h1>
+                    <li class="list-group-item">Pozos de mediana a baja energía</li>
+                    <li class="list-group-item">Presiones estáticas menores a 150lpc/1000 pies</li>
+                    <li class="list-group-item">Indices de productividad menores a 0,3bpd/lpc</li>
+                    <li class="list-group-item">Tasas de producción menores de 100bpd</li>
+                  </ul>
+                </div></br>
+
+              </div>
+
+           </div>
+
+          </form>
+
+          <p>Por favor, verifique los parámetros para la selección del método de levantamiento artificial por gas.</p>
+
+          <form>
+            <div class="row">
+              <div class="col-sm-6">
+                <a href="calculosContinuo.html" class="btn btn-primary stretched-link" id="botones">Continuo</a>
+              </div>
+
+              <div class="col-sm-5">
+                <a href="calculosIntermitente.html" class="btn btn-primary stretched-link" id="botones">Intermitente</a>
+              </div>
+            </div>
+          </form>
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer>
+      <div id="footer">
+        <p class="copy">&copy; Macedonia. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+  </body>
+
+</html>

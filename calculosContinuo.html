@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>&copy; Macedonia</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+  <link rel="stylesheet" href="css/fontello.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/stylesheet.css" type="text/css" charset="utf-8" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/lall.min.css"/>
+  <script src="js/chart.js"></script>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/tableExport.min.js"></script>
+  <script src="js/shieldui-all.min.js"></script>
+  <script src="js/jszip.min.js"></script>
+  <script src="js/jspdf.min.js"></script>
+</head>
+
+<body>
+
+  <header>
+
+    <div class="contenedor">
+      <!-- Menu -->
+      <input type="checkbox" id="menu-bar">
+      <label class="icon-menu" for="menu-bar"></label>
+      <nav class="menu">
+        <a href="inicio.html">Inicio</a>
+        <a href="inicioCalculos.html">Cálculos</a>
+        <a href="acercaDe.html">Acerca de</a>
+        <a href="about:blank"> Salir</a>
+      </nav>
+      <!-- Titulo -->
+      <a href="acercaDe.html">
+        <h1 href="acercaDe.html" class="Macedonia">Macedonia</h1>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Banner -->
+    <section id="banner">
+
+      <img src="img/pozo.jpg">
+
+        <div id="textBanner" class="contenedor">
+
+          <h2>MacedoniaSL</h2>
+
+          <p>Cálculos para el diseño del Levantamiento Artificial por Gas Continuo e Intermitente</p>
+
+          <a href="acercaDe.html">Leer más</a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Calculos -->
+    <section id="datos">
+      <div class="contenedor">
+
+
+        <h3>Ingresar los siguientes datos para el diseño del Levantamiento Artificial por gas Continuo</h3></br>
+
+        <div id="Aviso">
+          <a class="alert-link">Aviso</a>: El programa distingue los puntos ( . ) de las comas ( , ) al usar números decimales.
+        </div>
+
+        <!-- Gradiente de Produccion -->
+
+        <label id="etiquetaProd">Introduzca valores de Profundidad y Presión correspondientes al Gradiente de fluido de producción:</label></br><button
+        id="botonHover26"
+        type="button"
+        class="btn btn-secondary"
+        data-container="body"
+        data-toggle="popover"
+        data-placement="top"
+        data-content="Se recomienda introducir los valores de profundidad con intervalos 100, 500 o 1000 pies dependiendo de la profundidad del pozo. Los valores de presión deben ser los correspondientes a la profundidad colocada. El ultimo valor de profundidad es a la profundidad de la arena y el ultimo valor de presión es la presión de fondo fluyente.">
+        Info
+        </button></br>
+
+        <form id="gradienteProd">
+
+          <div class="row">
+
+            <div class="col-sm-4">
+              <label for="">Profundidad</label>
+              <input type="number" id="ProfG1" value="0" class="form-control" readonly="readonly" required>
+            </div>
+            <div class="col-sm-4">
+              <label for="">Presión</label>
+              <input type="number" id="PG1" class="form-control" placeholder="Pwh (Lpc)" autofocus onkeyup="llenaCasilla()" value="174" required></br>
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-sm-4">
+              <input type="number" id="ProfG2" class="form-control" placeholder="Pies" required value="1000">
+            </div>
+            <div class="col-sm-4">
+              <input type="number" id="PG2" value="279" class="form-control" placeholder="Lpc" required></br>
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-sm-4">
+              <input type="number" id="ProfG3" class="form-control" placeholder="Pies" required value="2000">
+            </div>
+            <div class="col-sm-4">
+              <input type="number" id="PG3" class="form-control" placeholder="Lpc" required value="393"></br>
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-sm-4">
+              <input type="number" id="ProfG4" class="form-control" placeholder="Pies" required value="3000">
+            </div>
+            <div class="col-sm-4">
+              <input type="number" id="PG4" class="form-control" placeholder="Lpc" required value="516"></br>
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-sm-4">
+              <input type="number" id="ProfG5" class="form-control" placeholder="Pies" required value="4000">
+            </div>
+            <div class="col-sm-4">
+              <input type="number" id="PG5" class="form-control" placeholder="Lpc" required value="646"></br>
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-sm-4">
+              <input type="number" id="ProfG6" class="form-control" placeholder="Pies" required value="5000">
+            </div>
+            <div class="col-sm-4">
+              <input type="number" id="PG6" class="form-control" placeholder="Lpc" required value="783"></br>
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-sm-4">
+              <input type="number" id="ProfG7" class="form-control" placeholder="Pies" required value="6000">
+            </div>
+            <div class="col-sm-4">
+              <input type="number" id="PG7" class="form-control" placeholder="Lpc" required value="928"></br>
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-sm-4">
+              <input type="number" id="ProfG8" class="form-control" placeholder="Pies" required value="7000">
+            </div>
+            <div class="col-sm-4">
+              <input type="number" id="PG8" class="form-control" placeholder="Lpc" required value="1078"></br>
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-sm-4">
+              <input type="number" id="ProfG9" class="form-control" placeholder="Pies" required value="8000">
+            </div>
+            <div class="col-sm-4">
+              <input type="number" id="PG9" class="form-control" placeholder="Lpc" required value="1234"></br>
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-sm-4">
+              <input type="number" id="ProfG10" class="form-control" placeholder="Pies" required value="9000">
+            </div>
+            <div class="col-sm-4">
+              <input type="number" id="PG10" class="form-control" placeholder="Lpc" required value="1396"></br>
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-sm-4">
+              <input type="number" id="ProfG11" class="form-control" placeholder="Profarena(Pies)" required value="10000">
+            </div>
+            <div class="col-sm-4">
+              <input type="number" id="PG11" class="form-control" placeholder="Pwf(Lpc)" required value="1568"></br>
+            </div>
+
+          </div>
+
+
+        </form>
+
+
+        <form id="formularioVariables">
+
+          <label>Ecuación de la curva de Gradiente de producción, siendo:</br>Y= ax^3 + b x^2 + cx + d</label><button
+          id="botonHover16"
+          type="button"
+          class="btn btn-secondary"
+          data-container="body"
+          data-toggle="popover"
+          data-placement="top"
+          data-content="Los valores pueden ser obtenidos al graficar la curva de gradiente de producción. Se recomienda graficarlos en Microsoft Excel y obtener la ecuación mediante la herramienta del programa “mostrar ecuación de la curva”. En el caso de presentar una ecuación de grado inferior, se debe colocar cero (0) a los valores que no existan.">
+          <span id="textoBotonInfo">Info</span>
+          </button>
+
+          <div class="row">
+
+            <div class="col-sm-3">
+              <label for="">a</label></br>
+              <input type="number" class="form-control" id="a" name="a" placeholder="" value="-0.00000000006129611">
+            </div>
+
+            <div class="col-sm-3">
+              <label for="">b</label></br>
+              <input type="number" class="form-control" id="b" name="b" placeholder="" value="0.000004353998">
+            </div>
+
+            <div class="col-sm-3">
+              <label for="">c</label></br>
+              <input type="number" class="form-control" id="c" name="c" placeholder="" value="0.1016282">
+            </div>
+
+            <div class="col-sm-3">
+              <label for="">d</label></br>
+              <input type="number" class="form-control" id="d" name="d" placeholder="" value="174.1326">
+            </div>
+          </div></br>
+
+
+          <!--Variables para determinacion de gradientes de gas y fluido muerto -->
+          <div class="row">
+
+            <div class="col-sm-6">
+              <label for="Pko">Presión de Arranque</label><button
+              id="botonHover1"
+              type="button"
+              class="btn btn-secondary"
+              data-container="body"
+              data-toggle="popover"
+              data-placement="top"
+              data-content="Presión de arranque del compresor utilizado en sitio para la inyección del gas.">
+              Info
+              </button></br>
+              <input type="number" class="form-control" id="Pko" name="Pko" placeholder="Pko (Lpc)" value="1500">
+            </div>
+
+            <div class="col-sm-6">
+              <label for="Profemp">Profundidad de la Empacadura</label><button
+              id="botonHover2"
+              type="button"
+              class="btn btn-secondary"
+              data-container="body"
+              data-toggle="popover"
+              data-placement="top"
+              data-content="Profundidad a la cual es colocada la empacadura para asilar zona de producción. Dato de Completación.">
+              Info
+              </button></br>
+              <input type="number" class="form-control" id="Profemp" name="Profemp" placeholder="Profemp (Pies)" value="9900">
+            </div>
+          </div>
+
+
+          <div class="row">
+
+            <div class="col-sm-6">
+              <label for="Pwh">Presión de Cabezal</label><button
+              id="botonHover3"
+              type="button"
+              class="btn btn-secondary"
+              data-container="body"
+              data-toggle="popover"
+              data-placement="top"
+              data-content="Presión medida en el cabezal del pozo.">
+              Info
+              </button></br>
+              <input type="number" class="form-control" id="Pwh" name="Pwh" placeholder="Pwh (Lpc)" value="174">
+            </div>
+
+            <div class="col-sm-6">
+              <label for="Gfm">Gradiente de presión del Fluido Muerto</label><button
+              id="botonHover4"
+              type="button"
+              class="btn btn-secondary"
+              data-container="body"
+              data-toggle="popover"
+              data-placement="top"
+              data-content="Cantidad de presión (Lpc) que aumenta por cada pie profundidad del fluido muerto.">
+              Info
+              </button></br>
+              <input type="number" class="form-control" id="Gfm" name="Gfm" placeholder="Gfm (Lpc/pie)" value="0.450">
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-sm-6">
+              <label for="Gg">Gradiente de presión del Gas Gnyectado</label><button
+              id="botonHover5"
+              type="button"
+              class="btn btn-secondary"
+              data-container="body"
+              data-toggle="popover"
+              data-placement="top"
+              data-content="Cantidad de presión (Lpc) que aumenta por cada pie profundidad del gas inyectado.">
+              Info
+              </button></br>
+              <input type="number" class="form-control" id="Gg" name="Gg" placeholder="Gg (Lpc/pie)" value="0.0353">
+            </div>
+
+            <div class="col-sm-6">
+              <label for="dP">Factor de Seguridad</label><button
+              id="botonHover6"
+              type="button"
+              class="btn btn-secondary"
+              data-container="body"
+              data-toggle="popover"
+              data-placement="top"
+              data-content="Cantidad de presión necesaria entre cada valvula para la presión de operación en superficie.">
+              Info
+              </button></br>
+              <input type="number" class="form-control" id="dP" name="dP" placeholder="dP (Lpc)" value="25">
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-sm-6">
+              <label for="EspMin">Espaciamiento Mínimo</label><button
+              id="botonHover7"
+              type="button"
+              class="btn btn-secondary"
+              data-container="body"
+              data-toggle="popover"
+              data-placement="top"
+              data-content="Cantidad de pies de separación requerida entre válvulas y la empacadura.">
+              Info
+              </button></br>
+              <input type="number" class="form-control" id="EspMin" name="EspMin" placeholder="EspMin (Lpc)" value="500">
+            </div>
+
+            <div class="col-sm-6">
+              <label for="Pws">Presión de Yacimiento</label><button
+              id="botonHover8"
+              type="button"
+              class="btn btn-secondary"
+              data-container="body"
+              data-toggle="popover"
+              data-placement="top"
+              data-content="Cantidad de presión del reservorio.">
+              Info
+              </button></br>
+              <input type="number" class="form-control" id="Pws" name="Pws" placeholder="Pws (Lpc)" value="3000">
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-sm-6">
+              <label for="Pb">Presión de Burbuja</label><button
+              id="botonHover17"
+              type="button"
+              class="btn btn-secondary"
+              data-container="body"
+              data-toggle="popover"
+              data-placement="top"
+              data-content="Presión a la cual se libera la primera burbuja de gas, el yacimiento pasa a estado saturado.">
+              Info
+              </button></br>
+              <input type="number" class="form-control" id="Pb" name="Pb" placeholder="Pb (Lpc)" value="2700">
+            </div>
+
+            <div class="col-sm-6">
+              <label for="J">Índice de Productividad</label><button
+              id="botonHover9"
+              type="button"
+              class="btn btn-secondary"
+              data-container="body"
+              data-toggle="popover"
+              data-placement="top"
+              data-content="Capacidad de entrega de fluidos del pozo, se obtiene al realacionar la cantidad de crudo producido por día entre el diferencial de presión entre el yacimiento y el fondo del pozo.">
+              Info
+              </button></br>
+              <input type="number" class="form-control" id="J" name="J" placeholder="J (Bbl/Lpc)" value="1.036">
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-sm-6">
+              <label for="Qdesc">Tasa de Descarga de Crudo</label><button
+              id="botonHover18"
+              type="button"
+              class="btn btn-secondary"
+              data-container="body"
+              data-toggle="popover"
+              data-placement="top"
+              data-content="Tasa de crudo producida por el pozo previo al diseño del sistema de levantamiento artificial por gas.">
+              Info
+              </button></br>
+              <input type="number" class="form-control" id="Qdesc" name="Qdesc" placeholder="Qdesc (Bpd)" value="200">
+            </div>
+
+            <div class="col-sm-6">
+              <label for="Qdise">Tasa de Crudo de Diseño</label><button
+              id="botonHover19"
+              type="button"
+              class="btn btn-secondary"
+              data-container="body"
+              data-toggle="popover"
+              data-placement="top"
+              data-content="Cantidad esperada de crudo a recuperar por día.">
+              Info
+              </button></br>
+              <input type="number" class="form-control" id="Qdise" name="Qdise" placeholder="Qdiseño (Bpd)" value="1237">
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-sm-6">
+              <label for="Fwpozo">Fracción de Agua y Sedimentos del Pozo</label><button
+              id="botonHover20"
+              type="button"
+              class="btn btn-secondary"
+              data-container="body"
+              data-toggle="popover"
+              data-placement="top"
+              data-content="Fracción de agua de formación producida por el pozo.">
+              Info
+              </button></br>
+              <input type="number" class="form-control" id="Fwpozo" name="Fwpozo" placeholder="Fw,pozo" value="0.5">
+            </div>
+
+            <div class="col-sm-6">
+              <label for="Fwfm">Fracción de Agua y Sedimentos del Fluido Muerto</label><button
+              id="botonHover21"
+              type="button"
+              class="btn btn-secondary"
+              data-container="body"
+              data-toggle="popover"
+              data-placement="top"
+              data-content="Fracción de agua contenida en el fluido muerto.">
+              Info
+              </button></br>
+              <input type="number" class="form-control" id="Fwfm" name="Fwfm" placeholder="Fw,fluido muerto" value="1">
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-sm-6">
+              <label for="RGLtotal">Relación Gas-Liquido Total</label><button
+              id="botonHover22"
+              type="button"
+              class="btn btn-secondary"
+              data-container="body"
+              data-toggle="popover"
+              data-placement="top"
+              data-content="Relación entre la cantidad de gas y la cantidad de liquidos (crudo y agua) producidos por el pozo">
+              Info
+              </button></br>
+              <input type="number" class="form-control" id="RGLtotal" name="RGLtotal" placeholder="RGLtotal (Pcn/Bn)" value="644">
+            </div>
+
+            <div class="col-sm-6">
+              <label for="RGLf">Relación Gas-Liquido de Formación</label><button
+              id="botonHover23"
+              type="button"
+              class="btn btn-secondary"
+              data-container="body"
+              data-toggle="popover"
+              data-placement="top"
+              data-content="Relación entre la cantidad de gas y la cantidad de liquidos (crudo y agua) entregados por el yacimiento al pozo.">
+              Info
+              </button></br>
+              <input type="number" class="form-control" id="RGLf" name="RGLf" placeholder="RGLf (Pcn/Bn)" value="250">
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-sm-6">
+              <label for="IDtbg">Diámetro Interno de la Tubería de Producción</label><button
+              id="botonHover24"
+              type="button"
+              class="btn btn-secondary"
+              data-container="body"
+              data-toggle="popover"
+              data-placement="top"
+              data-content="Cantidad de pulgadas del diámetro interno de la tubería de producción.">
+              Info
+              </button></br>
+              <input type="number" class="form-control" id="IDtbg" name="IDtbg" placeholder="IDtbg (Pulg)" value="2.992">
+            </div>
+
+            <div class="col-sm-6">
+              <label for="Qb">Tasa de Crudo a la Presión de Burbuja</label><button
+              id="botonHover25"
+              type="button"
+              class="btn btn-secondary"
+              data-container="body"
+              data-toggle="popover"
+              data-placement="top"
+              data-content="Cantidad de crudo producido cuando el yacimiento llegue a la presión de saturación.">
+              Info
+              </button></br>
+              <input type="number" class="form-control" id="Qb" name="Qb" placeholder="Qb (Bpd)" value="311">
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-sm-6">
+              <label for="Tyac">Temperatura del Yacimiento</label><button
+              id="botonHover24"
+              type="button"
+              class="btn btn-secondary"
+              data-container="body"
+              data-toggle="popover"
+              data-placement="top"
+              data-content="Temperatura en grados farenheit del reservorio.">
+              Info
+              </button></br>
+              <input type="number" class="form-control" id="Tyac" name="Tyac" placeholder="Tyac (F)" value="236">
+            </div>
+
+            <div class="col-sm-6">
+              <label for="Tamb">Temperatura Ambiente</label><button
+              id="botonHover25"
+              type="button"
+              class="btn btn-secondary"
+              data-container="body"
+              data-toggle="popover"
+              data-placement="top"
+              data-content="Temperatura en grados farenheit del ambiente en superficie.">
+              Info
+              </button></br>
+              <input type="number" class="form-control" id="Tamb" name="Tamb" placeholder="Tamb (F)" value="95">
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-sm-6">
+              <label for="Twh">Temperatura del Cabezal</label><button
+              id="botonHover24"
+              type="button"
+              class="btn btn-secondary"
+              data-container="body"
+              data-toggle="popover"
+              data-placement="top"
+              data-content="Temperatura en grados farenheit medida en el cabezal de producción.">
+              Info
+              </button></br>
+              <input type="number" class="form-control" id="Twh" name="Twh" placeholder="Twh (F)" value="141">
+            </div>
+
+          </div>
+
+        </form>
+
+
+        <p>Por favor, verifique que los datos ingresados son correctos y luego pulse <br>"Diseñar LAG-C"</p>
+
+        <form id="boton">
+
+          <button type="button" class="btn btn-secondary" id="button" onclick="showChart();">Diseñar LAG-C</button></br>
+
+        </form>
+
+      </div>
+
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+  <section id="resultados">
+
+    <div class="contenedor">
+      <h2>Resultados</h2>
+    </div>
+
+    <div class="chart-container" style="position: relative; height:55%; width:55%">
+      <canvas id="MiGrafica" height="200px"></canvas>
+    </div></br></br></br>
+
+    <button class="btn btn-success" id="exportAsPdf">Exportar Grafico a PDF</button></br></br>
+
+    <div id="tabla">
+
+      <table id="exportTable" class="table">
+
+        <thead class="thead-dark">
+
+          <tr>
+            <th scope="col">Vavula</th>
+            <th scope="col">Profvi</th>
+            <th scope="col">Poiv</th>
+            <th scope="col">Poid</th>
+            <th scope="col">ql</th>
+            <th scope="col">Wi</th>
+            <th scope="col">Qiny</th>
+            <th scope="col">Tv</th>
+          </tr>
+
+        </thead>
+
+        <tbody id="tablita">
+
+        </tbody>
+
+      </table></br>
+
+      <div>
+        <button
+        id="botonHoverTablaCon"
+        type="button"
+        class="btn btn-lg btn-danger"
+        data-toggle="popover"
+        data-placement="top"
+        title="Variable: Valor (Unidad)"
+        data-content="Profvi: Profundidad de la valvula(Lpc).
+        Povi: Presión Dinámica Tuberia(Lpc) Poid: Presión de Inyección gas(Lpc) ql: Caudal liquido de Producción (BpD) Wi: Corte de Agua nivel Valvula(%) Qiny: Caudal de gas Inyectado (Pcn/D) Tv: Temperatura de la Válvula (F).
+        ">
+        Leyenda de Variables
+        </button></br></br>
+      </div>
+
+      <button class="btn btn-success" id="exportButton">Exportar Tabla a Excel</button>
+
+    </div></br>
+
+
+  </section>
+
+  <footer>
+    <div id="footer" >
+      <p class="copy">&copy; Macedonia. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/continuoJS.js"></script>
+  <script src="js/botoneshover.js"></script>
+  <script type="text/javascript" src="js/botonExportarExcelCon.js"></script>
+  <script type="text/javascript" src="js/saveChartPdf.js"></script>
+
+</body>
+
+</html>

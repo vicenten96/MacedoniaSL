@@ -1,0 +1,43 @@
+#resultados {
+  margin-top: 75px;
+  position: relative;
+  display: none;
+}
+
+#resultados .contenedor h2{
+  margin-top: 150px;
+  text-decoration: none;
+  margin-left: 28%;
+  text-align: center;
+  background-color: #208E59;
+  color: #fff;
+  width: 55%;
+  border-radius: 10px;
+  padding: 7px;
+}
+
+#resultados .chart-container {
+    margin-top: 5%;
+  margin-left: 28%;
+}
+
+#tabla {
+  margin-left: 22.5%;
+  max-width: 65%;
+  text-align: center;
+}
+
+#tabla2 {
+  margin-left: 30%;
+  max-width: 50%;
+}
+
+#exportButtonInt {
+  margin-left: 50%;
+  padding: 7px;
+}
+
+#exportAsPdf {
+  margin-left: 49.5%;
+  padding: 7px;
+}

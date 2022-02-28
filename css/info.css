@@ -1,0 +1,30 @@
+#info  {
+  margin-top: 25px;
+  position: relative;
+  margin-right: auto;
+}
+
+#info .contenedor {
+  margin-left: 28%;
+  text-align: center;
+  width: 55%;
+}
+
+#info .contenedor h2 {
+  background-color: #208E59;
+  border-radius: 5px;
+  font-size: 30px;
+  padding: 5px;
+  color: #fff;
+}
+
+#info .contenedor h3 {
+  padding: 20px;
+  font-size: 20px;
+}
+
+#info .contenedor p {
+  font-weight: lighter;
+  line-height: 1.4;
+  text-align: justify;
+}
