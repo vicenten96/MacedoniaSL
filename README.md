@@ -1,6 +1,6 @@
-# MacedoniaSL
+# MacedoniaSL <img src="img/udo.png" style="width: 4%;">
 
-<img src="img/udo.png" >
+
 
 > MacedoniaSL es un proyecto con la premisa de Software Libre, con el cual los estudiantes se puedan inspirar a crear diferentes Software para la automatización de procesos de ingeniería. El mismo fue mi proyecto de investigación para optar por el título de Ingeniero de Petróleo en la Universidad de Oriente, Venezuela.
 
